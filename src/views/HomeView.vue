@@ -1,10 +1,9 @@
 <script setup>
-import Button from 'primevue/button'
+import HeroSection from '@/components/blocks/HeroSection.vue'
 </script>
 
 <template>
-	<h2>Добро пожаловать Нурик</h2>
-	<Button label="Submit" />
+	<HeroSection />
 </template>
 
 <style lang="scss" scoped></style>
