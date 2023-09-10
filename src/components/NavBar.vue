@@ -80,6 +80,9 @@ const links = [
 }
 
 .nav-item {
+	&:hover {
+		color: $orange;
+	}
 }
 
 .nav-item:nth-child(1) {
@@ -92,16 +95,6 @@ const links = [
 	position: absolute;
 	bottom: -15px;
 	left: 0;
-}
-
-.nav-link {
-	&:hover {
-		color: red;
-	}
-}
-
-.nav-link.active {
-	color: $orange;
 }
 
 .contacts {
@@ -151,7 +144,7 @@ const links = [
 
 		z-index: 2;
 
-		padding: 28px 38px;
+		padding: 28px 18px;
 		display: flex;
 		flex-direction: column;
 		row-gap: 24px;
