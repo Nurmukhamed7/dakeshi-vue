@@ -9,6 +9,33 @@ const cardsData = [
 			'Наша команда разработчиков и дизайнеров разработает приложения любого масштаба.',
 		cardNumber: '01',
 	},
+	{
+		imagePath: '/images/computerandpeople.svg',
+		title: 'САЙТЫ',
+		text1:
+			'Мы разрабатываем сайты для разных бизнес нужд: лендинги, каталоги, интернет магазины, имиджевые сайты и так далее.',
+		text2:
+			'Наши специалисты имеют большой опыт создания сайтов для таких индустрий как недвижимость, авто, розница, красота и мода и многие другие.',
+		cardNumber: '02',
+	},
+	{
+		imagePath: '/images/computerandkeys.svg',
+		title: 'АВТОМАТИЗАЦИЯ',
+		text1:
+			'Автоматизация процессов помогает организациям повысить эффективность своих операций, снизить затраты и улучшить качество продукции или услуг.',
+		text2:
+			'Наша команда разработчиков и дизайнеров разработает приложения любого масштаба.',
+		cardNumber: '03',
+	},
+	{
+		imagePath: '/images/thumb.svg',
+		title: 'CRM',
+		text1:
+			'Процесс состоит из разработки и создания продукта с учетом его внешнего вида, функциональности, пользовательского опыта и других аспектов, чтобы обеспечить удовлетворение потребностей пользователей и достижение бизнес-целей.',
+		text2:
+			'Наша команда разработчиков и дизайнеров разработает приложения любого масштаба.',
+		cardNumber: '04',
+	},
 ]
 </script>
 
@@ -42,7 +69,7 @@ const cardsData = [
 
 	max-width: 1142px;
 	height: 555px;
-	margin: 0 auto;
+	margin: 22px auto;
 	border: 3px solid $main;
 	border-radius: 12px;
 
@@ -84,6 +111,7 @@ const cardsData = [
 	position: relative;
 }
 .card__content {
+	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	gap: 18px;
@@ -114,5 +142,20 @@ const cardsData = [
 	font-size: 20px;
 	font-family: Finlandica;
 	font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 1000px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 480px) {
 }
 </style>

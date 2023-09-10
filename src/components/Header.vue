@@ -78,6 +78,10 @@
 		font-size: 70px;
 		font-family: $font-header;
 	}
+
+	.header-gradient__2 {
+		width: 480px;
+	}
 }
 
 @media (max-width: 1024px) {
