@@ -66,6 +66,8 @@ const cardsData = [
 <style lang="scss" scoped>
 @import '@/styles/layout/layout';
 
+.card-container {
+}
 .card {
 	position: relative;
 	max-width: 1142px;
@@ -130,7 +132,6 @@ const cardsData = [
 		left: 150px;
 		top: 50px;
 		transform: rotate(90deg);
-		// filter: blur(0);
 	}
 
 	@media (max-width: 768px) {
@@ -182,19 +183,16 @@ const cardsData = [
 }
 
 @media (max-width: 1200px) {
-	// тут все норм
 }
 
 @media (max-width: 1024px) {
 	.card {
-		// position: relative;
-		max-width: 853px; //
-		height: 504px; //
+		max-width: 853px;
+		height: 504px;
 	}
 
 	.card__row {
-		flex-direction: column; //
-		// width: 853px; // TODO: работает и без этого, в конце проверить
+		flex-direction: column;
 	}
 
 	.card:first-child .card__img {
@@ -208,7 +206,6 @@ const cardsData = [
 		position: relative;
 		margin-bottom: -10px;
 		margin-top: -80px;
-		// background: red;
 	}
 	.card:nth-child(3) .card__img {
 		position: relative;
@@ -228,15 +225,15 @@ const cardsData = [
 	}
 
 	.card__content {
-		width: 800px; //
+		width: 800px;
 
 		h4 {
-			font-size: 30px; //
+			font-size: 30px;
 		}
 
 		p {
-			width: 100%; //
-			font-size: 1rem; //
+			width: 100%;
+			font-size: 1rem;
 		}
 	}
 }
@@ -245,18 +242,18 @@ const cardsData = [
 }
 @media (max-width: 768px) {
 	.card {
-		max-width: 640px; //
-		height: 504px; //
+		max-width: 640px;
+		height: 504px;
 	}
 
 	.card__content {
-		width: 600px; //
+		width: 600px;
 	}
 }
 @media (max-width: 480px) {
 	.card {
 		overflow: hidden;
-		max-width: 400px; //
+		max-width: 400px;
 	}
 
 	.card:first-child .card__img {
@@ -294,13 +291,13 @@ const cardsData = [
 	}
 
 	.card__content {
-		width: 380px; //
+		width: 380px;
 	}
 }
 
 @media (max-width: 428px) {
 	.card {
-		max-width: 356px; //
+		max-width: 356px;
 	}
 
 	.card:nth-child(4) .card__img {
@@ -311,7 +308,7 @@ const cardsData = [
 		}
 	}
 	.card__content {
-		width: 336px; //
+		width: 336px;
 	}
 }
 </style>

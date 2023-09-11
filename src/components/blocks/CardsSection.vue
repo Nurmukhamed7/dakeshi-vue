@@ -4,9 +4,8 @@ import CardsHeading from '@/components/CardsHeading.vue'
 </script>
 
 <template>
-	<CardsHeading />
+	<CardsHeading label="ЧТО МЫ РАЗРАБАТЫВАЕМ" />
 	<Card />
-	<div></div>
 </template>
 
 <style lang="scss" scoped></style>

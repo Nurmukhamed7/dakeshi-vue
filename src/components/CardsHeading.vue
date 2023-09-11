@@ -1,10 +1,17 @@
+<script setup>
+const props = defineProps({
+	label: {
+		type: String,
+		default: 'Тут Header',
+	},
+})
+</script>
+
 <template>
 	<div class="heading">
-		<h2>ЧТО МЫ РАЗРАБАТЫВАЕМ</h2>
+		<h2>{{ label }}</h2>
 	</div>
 </template>
-
-<script setup></script>
 
 <style lang="scss" scoped>
 @import '@/styles/layout/layout';
