@@ -46,13 +46,13 @@ const bottomWordsText = bottomWords.map(word => word.name).join(' ')
 		<div class="top__ticker">
 			<marquee-text :repeat="5">
 				{{ topWordsText }}
-				<img src="/public/images/ticker-smile.svg" alt="" />
+				<img src="/images/ticker-smile.svg" alt="" />
 			</marquee-text>
 		</div>
 		<div class="bottom__ticker">
 			<marquee-text :reverse="true" :repeat="5">
 				{{ bottomWordsText }}
-				<img src="/public/images/ticker-smile.svg" alt="" />
+				<img src="/images/ticker-smile.svg" alt="" />
 			</marquee-text>
 		</div>
 	</div>

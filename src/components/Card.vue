@@ -1,7 +1,7 @@
 <script setup>
 const cardsData = [
 	{
-		imagePath: '/images/pazl1.svg',
+		imagePath: '/images/pazls2.svg',
 		title: 'ПРИЛОЖЕНИЯ',
 		text1:
 			'Процесс состоит из разработки и создания продукта с учетом его внешнего вида, функциональности, пользовательского опыта и других аспектов, чтобы обеспечить удовлетворение потребностей пользователей и достижение бизнес-целей.',
@@ -40,23 +40,25 @@ const cardsData = [
 </script>
 
 <template>
-	<div class="card" v-for="(card, index) in cardsData" :key="index">
-		<div class="card__row">
-			<div class="card__gradient1"></div>
-			<div class="card__gradient2"></div>
-			<div class="card__img">
-				<img :src="card.imagePath" alt="" />
+	<div class="card-container">
+		<div class="card" v-for="(card, index) in cardsData" :key="index">
+			<div class="card__row">
+				<!-- <div class="card__gradient2"></div>
+				<div class="card__gradient1"></div> -->
+				<div class="card__img">
+					<img :src="card.imagePath" alt="" />
+				</div>
+				<div class="card__content">
+					<h4>{{ card.title }}</h4>
+					<p>
+						{{ card.text1 }}
+					</p>
+					<p>
+						{{ card.text2 }}
+					</p>
+				</div>
+				<div class="card__number">{{ card.cardNumber }}</div>
 			</div>
-			<div class="card__content">
-				<h4>{{ card.title }}</h4>
-				<p>
-					{{ card.text1 }}
-				</p>
-				<p>
-					{{ card.text2 }}
-				</p>
-			</div>
-			<div class="card__number">{{ card.cardNumber }}</div>
 		</div>
 	</div>
 </template>
@@ -66,7 +68,6 @@ const cardsData = [
 
 .card {
 	position: relative;
-
 	max-width: 1142px;
 	height: 555px;
 	margin: 22px auto;
@@ -145,9 +146,63 @@ const cardsData = [
 }
 
 @media (max-width: 1200px) {
+	// тут все норм
 }
 
 @media (max-width: 1024px) {
+	.card {
+		// position: relative;
+		max-width: 853px; //
+		height: 504px; //
+	}
+
+	.card__row {
+		flex-direction: column; //
+		// width: 853px; // TODO: работает и без этого, в конце проверить
+	}
+
+	.card:first-child .card__img {
+		position: relative;
+		transform: rotate(45deg);
+		margin-top: -100px;
+	}
+
+	.card:nth-child(2) .card__img {
+		width: 300px;
+		position: relative;
+		margin-bottom: -10px;
+		margin-top: -80px;
+		// background: red;
+	}
+	.card:nth-child(3) .card__img {
+		position: relative;
+		margin-top: -100px;
+		img {
+			width: 500px;
+			height: 300px;
+		}
+	}
+	.card:nth-child(4) .card__img {
+		position: relative;
+		margin-top: -100px;
+		img {
+			width: 200px;
+			height: 200px;
+		}
+	}
+
+	.card__content {
+		width: 800px; //
+
+		h4 {
+			font-size: 30px; //
+		}
+
+		p {
+			width: 100%; //
+			font-size: 1rem; //
+		}
+	}
 }
 
 @media (max-width: 1000px) {
