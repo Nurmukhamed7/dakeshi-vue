@@ -43,8 +43,8 @@ const cardsData = [
 	<div class="card-container">
 		<div class="card" v-for="(card, index) in cardsData" :key="index">
 			<div class="card__row">
-				<!-- <div class="card__gradient2"></div>
-				<div class="card__gradient1"></div> -->
+				<div class="card__gradient2"></div>
+				<div class="card__gradient1"></div>
 				<div class="card__img">
 					<img :src="card.imagePath" alt="" />
 				</div>
@@ -94,6 +94,24 @@ const cardsData = [
 	position: absolute;
 	background: linear-gradient(217deg, #f04d37 30%, rgba(48, 58, 255, 0.45) 90%);
 	filter: blur(70px);
+
+	@media (max-width: 1024px) {
+		top: 50px;
+		left: 360px;
+		transform: rotate(90deg);
+		// filter: blur(0);
+	}
+
+	@media (max-width: 768px) {
+		left: 250px;
+	}
+
+	@media (max-width: 480px) {
+		width: 148px;
+		height: 200px;
+		left: 160px;
+		top: 30px;
+	}
 }
 .card__gradient2 {
 	width: 248px;
@@ -107,6 +125,24 @@ const cardsData = [
 		rgba(48, 58, 255, 0.45) 20%
 	);
 	filter: blur(30px);
+
+	@media (max-width: 1024px) {
+		left: 150px;
+		top: 50px;
+		transform: rotate(90deg);
+		// filter: blur(0);
+	}
+
+	@media (max-width: 768px) {
+		left: 50px;
+	}
+
+	@media (max-width: 480px) {
+		width: 148px;
+		height: 200px;
+		left: 0;
+		top: 10px;
+	}
 }
 .card__img {
 	position: relative;
@@ -208,9 +244,74 @@ const cardsData = [
 @media (max-width: 1000px) {
 }
 @media (max-width: 768px) {
+	.card {
+		max-width: 640px; //
+		height: 504px; //
+	}
+
+	.card__content {
+		width: 600px; //
+	}
 }
 @media (max-width: 480px) {
+	.card {
+		overflow: hidden;
+		max-width: 400px; //
+	}
+
+	.card:first-child .card__img {
+		margin-bottom: -50px;
+		img {
+			width: 200px;
+			height: 300px;
+		}
+	}
+
+	.card:nth-child(2) .card__img {
+		margin-bottom: 0;
+		img {
+			width: 300px;
+			height: 200px;
+		}
+	}
+
+	.card:nth-child(3) .card__img {
+		width: 500px;
+
+		img {
+			width: 800px;
+			height: 300px;
+		}
+	}
+
+	.card:nth-child(4) .card__img {
+		margin-top: -50px;
+
+		img {
+			width: 150px;
+			height: 150px;
+		}
+	}
+
+	.card__content {
+		width: 380px; //
+	}
 }
-@media (max-width: 480px) {
+
+@media (max-width: 428px) {
+	.card {
+		max-width: 356px; //
+	}
+
+	.card:nth-child(4) .card__img {
+		margin-top: -50px;
+		img {
+			width: 150px;
+			height: 150px;
+		}
+	}
+	.card__content {
+		width: 336px; //
+	}
 }
 </style>
