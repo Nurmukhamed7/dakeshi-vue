@@ -1,6 +1,6 @@
 <script setup>
 import CardsSection from '@/components/blocks/CardsSection.vue'
-import CaseSection from '@/components/blocks/CaseSection.vue'
+import CaseSection from '@/components/blocks/CaseSection/CaseSection.vue'
 import HeroSection from '@/components/blocks/HeroSection.vue'
 import SecondSection from '@/components/blocks/SecondSection.vue'
 import TickerSection from '@/components/blocks/TickerSection.vue'
