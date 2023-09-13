@@ -5,6 +5,8 @@ import HeroSection from '@/components/blocks/HeroSection.vue'
 import SecondSection from '@/components/blocks/SecondSection.vue'
 import TeamSection from '@/components/blocks/TeamSection/TeamSection.vue'
 import TickerSection from '@/components/blocks/TickerSection.vue'
+
+import FooterSection from '@/components/blocks/FooterSection.vue'
 </script>
 
 <template>
@@ -16,6 +18,9 @@ import TickerSection from '@/components/blocks/TickerSection.vue'
 	</div>
 	<CaseSection />
 	<TeamSection />
+	<div class="blue-bg">
+		<FooterSection />
+	</div>
 </template>
 
 <style lang="scss" scoped>
@@ -24,5 +29,10 @@ import TickerSection from '@/components/blocks/TickerSection.vue'
 .black-bg {
 	background: $black;
 	padding: 22px 0;
+}
+
+.blue-bg {
+	background: $blue;
+	padding-top: 40px;
 }
 </style>
