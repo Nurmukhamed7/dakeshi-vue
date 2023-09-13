@@ -159,4 +159,119 @@ const showMeText = (index, event) => {
 	height: 351px;
 	transition: transform 0.3s ease;
 }
+
+@media (max-width: 1200px) {
+	.wrapper {
+		width: 1170px;
+		height: 447px;
+		display: flex;
+		align-items: center;
+	}
+}
+@media (max-width: 1000px) {
+	.wrapper {
+		width: 970px;
+		height: 447px;
+		overflow-x: auto;
+	}
+
+	.arrow {
+		display: none;
+	}
+
+	.cards {
+		width: 1000px;
+	}
+
+	.backText_2 {
+		left: 230px;
+	}
+
+	.backText_3 {
+		left: 450px;
+	}
+
+	.backText_4 {
+		left: 675px;
+	}
+
+	.easyLife,
+	.alanyaInternational,
+	.favoriteMotors,
+	.rectangle5 {
+		width: 230px;
+		height: 447px;
+	}
+}
+@media (max-width: 768px) {
+	.wrapper {
+		width: 738px;
+	}
+
+	.backText_3 {
+		left: 460px;
+	}
+
+	.backText_4 {
+		left: 690px;
+	}
+
+	.easyLife,
+	.alanyaInternational,
+	.favoriteMotors,
+	.rectangle5 {
+		width: 245px;
+		height: 447px;
+	}
+}
+@media (max-width: 480px) {
+	.wrapper {
+		width: 450px;
+	}
+}
+
+@media (max-width: 460px) {
+	.wrapper {
+		width: 430px;
+	}
+}
+
+@media (max-width: 440px) {
+	.wrapper {
+		width: 410px;
+	}
+}
+
+@media (max-width: 420px) {
+	.wrapper {
+		width: 390px;
+	}
+}
+
+@media (max-width: 400px) {
+	.wrapper {
+		width: 370px;
+	}
+}
+
+@media (max-width: 396px) {
+	.wrapper {
+		width: 365px;
+	}
+}
+
+@media (max-width: 391px) {
+	.wrapper {
+		width: 360px;
+	}
+}
+
+@media (max-width: 380px) {
+	.wrapper {
+		width: 300px;
+	}
+}
+
+@media (max-width: 320px) {
+}
 </style>

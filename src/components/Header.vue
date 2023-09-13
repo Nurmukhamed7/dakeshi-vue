@@ -137,7 +137,7 @@
 
 @media (max-width: 480px) {
 	.heroSection {
-		/* overflow-x: hidden; */
+		// overflow-x: hidden;
 	}
 
 	.header-row {
