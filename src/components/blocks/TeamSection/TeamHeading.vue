@@ -36,6 +36,13 @@ p {
 }
 
 @media (max-width: 1024px) {
+	.heading {
+		margin-top: 78px;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+
 	h2 {
 		font-size: 66.89px;
 	}
