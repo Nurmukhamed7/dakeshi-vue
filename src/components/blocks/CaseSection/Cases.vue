@@ -16,13 +16,11 @@ const elementClasses = ref([
 ])
 
 onMounted(() => {
-	console.log(document.querySelector('.backText_1'))
-	console.log(document.querySelector('.easyLife'))
+	// console.log(document.querySelector('.backText_1'))
+	// console.log(document.querySelector('.easyLife'))
 })
 
 const showMeText = (index, event) => {
-	console.log(document.querySelector('.easyLife'))
-	console.log(document.querySelector('.backText_1'))
 	const backText = document.querySelector(`.backText_${index + 1}`)
 	if (event.type === 'mouseover') {
 		backText.style.opacity = '1'
@@ -168,6 +166,15 @@ const showMeText = (index, event) => {
 		align-items: center;
 	}
 }
+
+@media (max-width: 1024px) {
+	.wrapper {
+		width: 994px;
+		height: 447px;
+		overflow-x: auto;
+	}
+}
+
 @media (max-width: 1000px) {
 	.wrapper {
 		width: 970px;
