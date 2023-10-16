@@ -1,153 +1,97 @@
-<script setup>
-import { ref } from 'vue'
-import { RouterLink } from 'vue-router'
-
-let openMenu = ref(false)
-
-const menuOpen = () => {
-	openMenu.value = !openMenu.value
-}
-
-const links = [
-	{
-		name: 'DAKESHI INC',
-		link: '/',
-	},
-	{
-		name: 'ДИЗАЙН <br/> И МАРКЕТИНГ',
-		link: '/design-and-marketing',
-	},
-	{
-		name: 'АКАДЕМИЯ',
-		link: '/academy',
-	},
-	{
-		name: 'АНАЛИТИКА',
-		link: '/analytic',
-	},
-]
-</script>
+<script setup></script>
 
 <template>
-	<div class="navbar">
-		<nav id="nav" class="nav" :class="[openMenu ? 'open' : '']">
-			<div class="nav-button" @click="menuOpen()">
-				<i v-if="!openMenu" class="pi pi-bars" style="font-size: 2rem" />
-				<i v-if="openMenu" class="pi pi-times" style="font-size: 2rem" />
+	<header>
+		<!-- <div class="container mobile"></div> -->
+		<nav class="menu">
+			<div class="menu-container">
+				<div class="menu-header">
+					<router-link to="/">
+						<img src="/images/logo.svg" alt="" />
+					</router-link>
+					<!-- <button>XBTN</button> -->
+				</div>
+				<div class="menu-content">
+					<div class="desktop">
+						<div class="items">
+							<div class="item">
+								<router-link class="link" :to="{ name: 'home' }"
+									>DAKESHI INC</router-link
+								>
+							</div>
+							<div class="item">
+								<router-link class="link" :to="{ name: 'DesignAndMarketing' }"
+									>ДИЗАЙН И МАРКЕТИНГ</router-link
+								>
+							</div>
+							<div class="item">
+								<router-link class="link" :to="{ name: 'Academy' }"
+									>АКАДЕМИЯ</router-link
+								>
+							</div>
+							<div class="item">
+								<router-link class="link" :to="{ name: 'Analytic' }"
+									>АНАЛИТИКА</router-link
+								>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="mobile">mobile</div> -->
+					<div class="contact">
+						<button>Связаться с нами</button>
+					</div>
+				</div>
 			</div>
-
-			<ul class="nav-list">
-				<li class="nav-item" v-for="(link, index) in links" :key="index">
-					<RouterLink :to="link.link" v-html="link.name"></RouterLink>
-				</li>
-			</ul>
 		</nav>
-		<div class="contacts">
-			<router-link to="#" class="contact">СВЯЗАТЬСЯ С НАМИ</router-link>
-		</div>
-	</div>
+	</header>
 </template>
 
 <style lang="scss" scoped>
 @import '@/styles/layout/layout';
 
-.navbar {
+header {
+	// background: red;
+}
+
+.menu-container {
+	max-width: 1470px;
+	margin: 0 auto;
+	padding: 20px 15px;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	z-index: 10;
-	margin-bottom: 50px;
-	padding-top: 30px;
+	background-color: $orange;
 }
 
-.nav {
-}
-
-.nav-button {
-	display: none;
-	cursor: pointer;
-}
-
-.nav-list {
+.menu-content {
 	display: flex;
 	align-items: center;
-	gap: 105px;
+	justify-content: space-between;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0%;
+}
 
-	font-family: Finlandica;
-	font-size: 20px;
+.desktop {
+	margin: 0 auto;
+}
+
+.items {
+	display: flex;
+	gap: 64px;
+}
+
+.item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.link {
+	font-family: $font-header;
 	font-weight: 700;
-	line-height: normal;
-}
 
-.nav-item {
 	&:hover {
-		color: $orange;
-	}
-}
-
-.nav-item:nth-child(1) {
-	color: $orange;
-	position: relative;
-}
-
-.nav-item:nth-child(1)::after {
-	content: url('/images/BRUSH STROKE.svg');
-	position: absolute;
-	bottom: -15px;
-	left: 0;
-}
-
-.contacts {
-	background: $blue;
-	padding: 7px 21px;
-	border-radius: 2px;
-
-	a {
-		font-family: Finlandica;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
-	}
-}
-
-.contact {
-	&:hover {
-		color: white;
-	}
-}
-
-@media (max-width: 1200px) {
-}
-
-@media (max-width: 1000px) {
-	.header-nav {
-		padding: 25px 0;
-	}
-
-	.nav-button {
-		display: block;
-	}
-	.nav-list {
-		display: none;
-		margin: 0;
-		align-items: end;
-		text-align: right;
-	}
-
-	.nav.open .nav-list {
-		position: fixed;
-		top: 90px;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background: $main;
-
-		z-index: 2;
-
-		padding: 28px 18px;
-		display: flex;
-		flex-direction: column;
-		row-gap: 24px;
+		color: red;
 	}
 }
 </style>
