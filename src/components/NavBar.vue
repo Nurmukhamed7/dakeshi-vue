@@ -5,7 +5,6 @@ const isOpenMenu = ref(false)
 
 const toggleMenu = () => {
 	isOpenMenu.value = !isOpenMenu.value
-	console.log(isOpenMenu.value)
 }
 </script>
 
