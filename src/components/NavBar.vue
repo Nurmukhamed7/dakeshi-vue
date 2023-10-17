@@ -5,12 +5,23 @@
 		id="header"
 		class="_header_15xdh_141 main_15xdh_154 _scrolled_15xdh_162"
 	>
-		<div class="_container_1ezss_141 _mobile_15xdh_166"></div>
+		<div class="_container_1ezss_141 _mobile_15xdh_166">
+			<router-link
+				:to="{ name: 'home' }"
+				class="router-link-active router-link-exact-active _logo_1snct_141 _logo_15xdh_184"
+			>
+				<span class="_icon_1lg8m_141"
+					><img src="/images/logo.svg" alt="logo"
+				/></span>
+			</router-link>
+			<button class="_button_15xdh_198">Меню</button>
+		</div>
+
 		<nav class="_menu_15xdh_234">
 			<div class="_menu-container_15xdh_265">
 				<div class="_menu-header_15xdh_284">
 					<router-link to="/">
-						<img src="/images/logo.svg" alt="" />
+						<img src="/images/logo.svg" alt="logo" />
 					</router-link>
 					<button class="_close_egbwb_141 _close_15xdh_309">
 						<span class="_icon_1lg8m_141">
@@ -181,6 +192,9 @@
 <style lang="scss" scoped>
 @import '@/styles/layout/layout';
 
+.none {
+	display: none;
+}
 ._header_15xdh_141 {
 	background: pink;
 
@@ -194,7 +208,31 @@
 
 @media (min-width: 768px) {
 	._header_15xdh_141 {
-		background-color: pink;
+		// background-color: $blue;
+	}
+}
+
+._container_1ezss_141 {
+	margin: 0 auto;
+	max-width: 100%;
+}
+@media (min-width: 768px) {
+	._container_1ezss_141._desktop-only_1ezss_146 {
+		max-width: 100%;
+	}
+
+	._container_1ezss_141 {
+		max-width: 680px;
+	}
+}
+@media (min-width: 1024px) {
+	._container_1ezss_141 {
+		max-width: 944px !important;
+	}
+}
+@media (min-width: 1200px) {
+	._container_1ezss_141 {
+		max-width: 1120px !important;
 	}
 }
 
@@ -205,7 +243,6 @@
 	height: inherit;
 	justify-content: normal;
 }
-
 @media (min-width: 1200px) {
 	._menu-container_15xdh_265 {
 		display: flex;
@@ -218,10 +255,8 @@
 		flex-direction: row;
 	}
 }
-
 ._menu-header_15xdh_284 {
 	align-items: center;
-	background-color: #fff;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -240,6 +275,25 @@
 @media (min-width: 1200px) {
 	._menu-header_15xdh_284 {
 		padding: 0;
+	}
+}
+
+._mobile_15xdh_166 {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 13px 24px;
+}
+@media (min-width: 768px) {
+	._mobile_15xdh_166 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@media (min-width: 1200px) {
+	._mobile_15xdh_166 {
+		display: none;
 	}
 }
 
