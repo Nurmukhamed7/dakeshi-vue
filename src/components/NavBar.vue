@@ -12,7 +12,23 @@
 					<router-link to="/">
 						<img src="/images/logo.svg" alt="" />
 					</router-link>
-					<!-- <button>XBTN</button> -->
+					<button class="_close_egbwb_141 _close_15xdh_309">
+						<span class="_icon_1lg8m_141">
+							<svg
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M17.25 17.25L6.75 6.75M17.25 6.75L6.75 17.25"
+									stroke="black"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								></path>
+							</svg>
+						</span>
+					</button>
 				</div>
 				<div class="_menu-content_15xdh_320">
 					<div class="_desktop_1ge20_141">
@@ -148,7 +164,6 @@
 												class="_collapse_h3qlo_141"
 											></div>
 										</li>
-										<div class="_divider_140u5_245"></div>
 									</div>
 								</div>
 							</ul>
@@ -226,6 +241,45 @@
 	._menu-header_15xdh_284 {
 		padding: 0;
 	}
+}
+
+._close_egbwb_141 {
+	background: $close-menu-btn;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	padding: 4px;
+}
+._close_egbwb_141 svg {
+	height: 24px;
+	width: 24px;
+}
+._close_egbwb_141:active {
+	background: $close-menu-btn;
+}
+@media (min-width: 768px) {
+	._close_egbwb_141 svg {
+		height: 32px;
+		width: 32px;
+	}
+}
+
+._close_15xdh_309 {
+}
+@media (min-width: 768px) {
+	._close_15xdh_309 svg {
+		height: 32px;
+		width: 32px;
+	}
+}
+@media (min-width: 1200px) {
+	._close_15xdh_309 {
+		display: none;
+	}
+}
+
+._icon_1lg8m_141 {
+	display: flex;
 }
 
 ._menu-content_15xdh_320 {
@@ -341,9 +395,11 @@
 		padding: 8px 16px;
 	}
 }
-._active_140u5_180 ._item-text_140u5_170 {
-	color: $orange;
-	background-color: $active-menu;
+._active_140u5_180 {
+	._item-text_140u5_170 {
+		color: $orange;
+		// background-color: $active-menu;
+	}
 }
 
 ._link_140u5_213,
