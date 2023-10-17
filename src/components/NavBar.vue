@@ -39,7 +39,121 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div class="_mobile_1ge20_151">mobile</div> -->
+					<div class="_mobile_1ge20_151">
+						<div>
+							<div class="_title_140u5_141">Меню</div>
+							<ul class="accordion">
+								<div class="_items_140u5_184">
+									<div class="_item-wrapper_140u5_154">
+										<li class="_item_140u5_154">
+											<div>
+												<router-link
+													class="router-link-active router-link-exact-active _link_140u5_213 _active_140u5_180"
+													:to="{ name: 'home' }"
+												>
+													<span class="_item-text_140u5_170">DAKESHI INC</span>
+												</router-link>
+											</div>
+											<div
+												style="
+													padding: 0px;
+													border: 0px;
+													margin: 0px;
+													will-change: height;
+													overflow: hidden;
+													height: 0px;
+													--vc-auto-duration: 0ms;
+												"
+												data-collapse="collapsing"
+												class="_collapse_h3qlo_141"
+											></div>
+										</li>
+										<div class="_divider_140u5_245"></div>
+									</div>
+									<div class="_item-wrapper_140u5_154">
+										<li class="_item_140u5_154">
+											<div>
+												<router-link
+													class="router-link-active router-link-exact-active _link_140u5_213 _active_140u5_180"
+													:to="{ name: 'DesignAndMarketing' }"
+												>
+													<span class="_item-text_140u5_170"
+														>ДИЗАЙН И МАРКЕТИНГ</span
+													>
+												</router-link>
+											</div>
+											<div
+												style="
+													padding: 0px;
+													border: 0px;
+													margin: 0px;
+													will-change: height;
+													overflow: hidden;
+													height: 0px;
+													--vc-auto-duration: 0ms;
+												"
+												data-collapse="collapsing"
+												class="_collapse_h3qlo_141"
+											></div>
+										</li>
+										<div class="_divider_140u5_245"></div>
+									</div>
+									<div class="_item-wrapper_140u5_154">
+										<li class="_item_140u5_154">
+											<div>
+												<router-link
+													class="router-link-active router-link-exact-active _link_140u5_213 _active_140u5_180"
+													:to="{ name: 'Academy' }"
+												>
+													<span class="_item-text_140u5_170">АКАДЕМИЯ</span>
+												</router-link>
+											</div>
+											<div
+												style="
+													padding: 0px;
+													border: 0px;
+													margin: 0px;
+													will-change: height;
+													overflow: hidden;
+													height: 0px;
+													--vc-auto-duration: 0ms;
+												"
+												data-collapse="collapsing"
+												class="_collapse_h3qlo_141"
+											></div>
+										</li>
+										<div class="_divider_140u5_245"></div>
+									</div>
+									<div class="_item-wrapper_140u5_154">
+										<li class="_item_140u5_154">
+											<div>
+												<router-link
+													class="router-link-active router-link-exact-active _link_140u5_213 _active_140u5_180"
+													:to="{ name: 'Analytic' }"
+												>
+													<span class="_item-text_140u5_170">АНАЛИТИКА</span>
+												</router-link>
+											</div>
+											<div
+												style="
+													padding: 0px;
+													border: 0px;
+													margin: 0px;
+													will-change: height;
+													overflow: hidden;
+													height: 0px;
+													--vc-auto-duration: 0ms;
+												"
+												data-collapse="collapsing"
+												class="_collapse_h3qlo_141"
+											></div>
+										</li>
+										<div class="_divider_140u5_245"></div>
+									</div>
+								</div>
+							</ul>
+						</div>
+					</div>
 					<div class="contact">
 						<button>Связаться с нами</button>
 					</div>
@@ -149,8 +263,39 @@
 	}
 }
 
+._desktop_1ge20_141 {
+	display: none;
+	margin: 0 auto;
+}
+@media (min-width: 1200px) {
+	._desktop_1ge20_141 {
+		display: block;
+	}
+}
+
+._mobile_1ge20_151 {
+	display: block;
+}
+@media (min-width: 1200px) {
+	._mobile_1ge20_151 {
+		display: none;
+	}
+}
+
+._title_140u5_141 {
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 1.4;
+	margin-bottom: 12px;
+	margin-left: 12px;
+}
+@media (min-width: 768px) {
+	._title_140u5_141 {
+		font-size: 60px;
+	}
+}
+
 .contact {
-	//TODO: finished here 16.10
 	margin-top: auto;
 	min-width: 110px;
 	padding-bottom: 48px;
@@ -160,10 +305,6 @@
 	.contact {
 		padding: 0;
 	}
-}
-
-._desktop_1ge20_141 {
-	margin: 0 auto;
 }
 
 .items {
