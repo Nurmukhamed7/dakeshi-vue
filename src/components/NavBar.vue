@@ -1,4 +1,13 @@
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+
+const isOpenMenu = ref(false)
+
+const toggleMenu = () => {
+	isOpenMenu.value = !isOpenMenu.value
+	console.log(isOpenMenu.value)
+}
+</script>
 
 <template>
 	<header
@@ -14,16 +23,16 @@
 					><img src="/images/logo.svg" alt="logo"
 				/></span>
 			</router-link>
-			<button class="_button_15xdh_198">Меню</button>
+			<button class="_button_15xdh_198" @click="toggleMenu">Меню</button>
 		</div>
 
-		<nav class="_menu_15xdh_234">
+		<nav class="_menu_15xdh_234" :class="{ _active_15xdh_246: isOpenMenu }">
 			<div class="_menu-container_15xdh_265">
 				<div class="_menu-header_15xdh_284">
 					<router-link to="/">
 						<img src="/images/logo.svg" alt="logo" />
 					</router-link>
-					<button class="_close_egbwb_141 _close_15xdh_309">
+					<button class="_close_egbwb_141 _close_15xdh_309" @click="toggleMenu">
 						<span class="_icon_1lg8m_141">
 							<svg
 								viewBox="0 0 24 24"
@@ -233,6 +242,38 @@
 @media (min-width: 1200px) {
 	._container_1ezss_141 {
 		max-width: 1120px !important;
+	}
+}
+
+._menu_15xdh_234 {
+	background-color: #fff;
+	height: 100%;
+	left: 0;
+	overflow-y: auto;
+	position: fixed;
+	top: 0;
+	transform: translate(100%);
+	transition: transform 1.3s ease-in;
+	width: 100%;
+	z-index: 2;
+}
+._menu_15xdh_234._active_15xdh_246 {
+	transform: translate(0);
+	transition-timing-function: ease-out;
+}
+@media (min-width: 1200px) {
+	._menu_15xdh_234 {
+		height: auto;
+		left: auto;
+		overflow-y: visible;
+		overflow-y: initial;
+		padding: 0;
+		position: relative;
+		top: auto;
+		transform: none;
+		transition: none;
+		width: 100%;
+		z-index: auto;
 	}
 }
 
