@@ -295,6 +295,47 @@
 	}
 }
 
+.accordion {
+	align-items: normal;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: normal;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background: red;
+}
+@media (min-width: 768px) {
+	.accordion {
+		gap: 24px;
+		background: red;
+	}
+}
+
+._items_140u5_184 {
+	color: #888b94;
+	flex-grow: 1;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+._item-wrapper_140u5_154 {
+	overflow: hidden;
+}
+
+._item_140u5_154 {
+	font-size: 23px;
+	line-height: 1.4;
+	padding: 12px 0;
+}
+@media (min-width: 768px) {
+	._item_140u5_154 {
+		font-size: 28px;
+		padding: 16px 0;
+	}
+}
+
 .contact {
 	margin-top: auto;
 	min-width: 110px;
