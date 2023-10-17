@@ -74,7 +74,7 @@
 										<li class="_item_140u5_154">
 											<div>
 												<router-link
-													class="router-link-active router-link-exact-active _link_140u5_213 _active_140u5_180"
+													class="router-link-active router-link-exact-active _link_140u5_213"
 													:to="{ name: 'DesignAndMarketing' }"
 												>
 													<span class="_item-text_140u5_170"
@@ -102,7 +102,7 @@
 										<li class="_item_140u5_154">
 											<div>
 												<router-link
-													class="router-link-active router-link-exact-active _link_140u5_213 _active_140u5_180"
+													class="router-link-active router-link-exact-active _link_140u5_213"
 													:to="{ name: 'Academy' }"
 												>
 													<span class="_item-text_140u5_170">АКАДЕМИЯ</span>
@@ -128,7 +128,7 @@
 										<li class="_item_140u5_154">
 											<div>
 												<router-link
-													class="router-link-active router-link-exact-active _link_140u5_213 _active_140u5_180"
+													class="router-link-active router-link-exact-active _link_140u5_213"
 													:to="{ name: 'Analytic' }"
 												>
 													<span class="_item-text_140u5_170">АНАЛИТИКА</span>
@@ -167,7 +167,7 @@
 @import '@/styles/layout/layout';
 
 ._header_15xdh_141 {
-	background: orange;
+	background: pink;
 
 	min-width: 320px;
 	position: fixed;
@@ -179,7 +179,7 @@
 
 @media (min-width: 768px) {
 	._header_15xdh_141 {
-		background-color: #fbbbbb;
+		background-color: pink;
 	}
 }
 
@@ -212,13 +212,11 @@
 	justify-content: space-between;
 	padding: 14px 24px;
 }
-
 @media (min-width: 768px) {
 	._menu-header_15xdh_284 {
 		padding: 16px 44px;
 	}
 }
-
 @media (min-width: 1024px) {
 	._menu-header_15xdh_284 {
 		padding: 16px 40px;
@@ -304,12 +302,10 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	background: red;
 }
 @media (min-width: 768px) {
 	.accordion {
 		gap: 24px;
-		background: red;
 	}
 }
 
@@ -334,6 +330,50 @@
 		font-size: 28px;
 		padding: 16px 0;
 	}
+}
+
+._item-text_140u5_170 {
+	border-radius: 8px;
+	padding: 8px 12px;
+}
+@media (min-width: 768px) {
+	._item-text_140u5_170 {
+		padding: 8px 16px;
+	}
+}
+._active_140u5_180 ._item-text_140u5_170 {
+	color: $orange;
+	background-color: $active-menu;
+}
+
+._link_140u5_213,
+._text_140u5_212 {
+	align-items: center;
+	color: $black;
+	display: flex;
+	justify-content: space-between;
+}
+@media (min-width: 1024px) {
+	._link_140u5_213,
+	._text_140u5_212 {
+		cursor: pointer;
+	}
+
+	._link_140u5_213:hover:not(._active_140u5_180) ._item-text_140u5_170,
+	._text_140u5_212:hover:not(._active_140u5_180) ._item-text_140u5_170 {
+		background: #f2f2f3;
+	}
+}
+._link_140u5_213 {
+	-webkit-text-decoration: none;
+	text-decoration: none;
+}
+
+._divider_140u5_245 {
+	background: #f2f2f3;
+	height: 1px;
+	margin: 0 12px;
+	width: 100%;
 }
 
 .contact {
