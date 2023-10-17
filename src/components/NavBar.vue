@@ -340,6 +340,8 @@
 	line-height: 1.4;
 	margin-bottom: 12px;
 	margin-left: 12px;
+
+	font-family: $font-header;
 }
 @media (min-width: 768px) {
 	._title_140u5_141 {
@@ -389,6 +391,8 @@
 ._item-text_140u5_170 {
 	border-radius: 8px;
 	padding: 8px 12px;
+	font-family: $font-header;
+	font-weight: 600;
 }
 @media (min-width: 768px) {
 	._item-text_140u5_170 {
@@ -437,10 +441,18 @@
 	min-width: 110px;
 	padding-bottom: 48px;
 	padding-left: 12px;
+	font-size: 23px;
 }
+@media (min-width: 768px) {
+	.contact {
+		font-size: 28px;
+	}
+}
+
 @media (min-width: 1200px) {
 	.contact {
 		padding: 0;
+		font-size: 16px;
 	}
 }
 
