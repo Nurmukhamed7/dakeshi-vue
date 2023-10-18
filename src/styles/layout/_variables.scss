@@ -7,9 +7,11 @@ $transitionDuration: 0.2s; /* transition duration of layout elements e.g. sideba
 $orange: #f04d37;
 $blue: #2be2f0;
 $main: #ffffec;
+$main_slightly_darker: darken($main, 50%);
 $black: #242222;
 $active-menu: #ffff00;
 $close-menu-btn: #f2f2f3;
+$white: #fff;
 
 // Fonts
 $font-header: 'TT Travels Next Trl', sans-serif;

@@ -204,7 +204,7 @@ const toggleMenu = () => {
 	display: none;
 }
 ._header_15xdh_141 {
-	background: pink;
+	// background: pink;
 
 	min-width: 320px;
 	position: fixed;
@@ -245,7 +245,8 @@ const toggleMenu = () => {
 }
 
 ._menu_15xdh_234 {
-	background-color: #fff;
+	// background-color: #fff;
+	background-color: $main;
 	height: 100%;
 	left: 0;
 	overflow-y: auto;
@@ -290,7 +291,7 @@ const toggleMenu = () => {
 		margin: 0 auto;
 		padding: 20px 15px;
 		justify-content: space-between;
-		background-color: rgb(89, 77, 77);
+		// background-color: rgb(89, 77, 77);
 		align-items: center;
 		flex-direction: row;
 	}
