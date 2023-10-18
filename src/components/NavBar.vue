@@ -252,7 +252,7 @@ const toggleMenu = () => {
 	position: fixed;
 	top: 0;
 	transform: translate(100%);
-	transition: transform 1.3s ease-in;
+	transition: transform 0.3s ease-in;
 	width: 100%;
 	z-index: 2;
 }
