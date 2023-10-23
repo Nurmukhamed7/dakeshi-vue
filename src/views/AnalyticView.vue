@@ -1,7 +1,9 @@
-<template>
-	<div>This is Analytic page</div>
-</template>
+<script setup>
+import Navbar from '@/components/NavBar.vue'
+</script>
 
-<script setup></script>
+<template>
+	<Navbar />
+</template>
 
 <style lang="scss" scoped></style>

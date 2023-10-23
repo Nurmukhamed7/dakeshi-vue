@@ -16,7 +16,7 @@ const toggleMenu = () => {
 		<div class="_container_1ezss_141 _mobile_15xdh_166">
 			<router-link
 				:to="{ name: 'home' }"
-				class="router-link-active router-link-exact-active _logo_1snct_141 _logo_15xdh_184"
+				class="_logo_1snct_141 _logo_15xdh_184"
 			>
 				<span class="_icon_1lg8m_141"
 					><img src="/images/logo.svg" alt="logo"
@@ -53,7 +53,7 @@ const toggleMenu = () => {
 					<div class="_desktop_1ge20_141">
 						<div class="items">
 							<div class="item">
-								<router-link class="link active-o1lhr" :to="{ name: 'home' }"
+								<router-link class="link" :to="{ name: 'home' }"
 									>DAKESHI INC</router-link
 								>
 							</div>
@@ -83,7 +83,7 @@ const toggleMenu = () => {
 										<li class="_item_140u5_154">
 											<div>
 												<router-link
-													class="router-link-active router-link-exact-active _link_140u5_213 _active_140u5_180"
+													class="_link_140u5_213"
 													:to="{ name: 'home' }"
 												>
 													<span class="_item-text_140u5_170">DAKESHI INC</span>
@@ -109,7 +109,7 @@ const toggleMenu = () => {
 										<li class="_item_140u5_154">
 											<div>
 												<router-link
-													class="router-link-active router-link-exact-active _link_140u5_213"
+													class="_link_140u5_213"
 													:to="{ name: 'DesignAndMarketing' }"
 												>
 													<span class="_item-text_140u5_170"
@@ -137,7 +137,7 @@ const toggleMenu = () => {
 										<li class="_item_140u5_154">
 											<div>
 												<router-link
-													class="router-link-active router-link-exact-active _link_140u5_213"
+													class="_link_140u5_213"
 													:to="{ name: 'Academy' }"
 												>
 													<span class="_item-text_140u5_170">АКАДЕМИЯ</span>
@@ -163,7 +163,7 @@ const toggleMenu = () => {
 										<li class="_item_140u5_154">
 											<div>
 												<router-link
-													class="router-link-active router-link-exact-active _link_140u5_213"
+													class="_link_140u5_213"
 													:to="{ name: 'Analytic' }"
 												>
 													<span class="_item-text_140u5_170">АНАЛИТИКА</span>
@@ -496,7 +496,7 @@ const toggleMenu = () => {
 }
 ._active_140u5_180 {
 	._item-text_140u5_170 {
-		color: $orange;
+		// color: $orange;
 		// background-color: $active-menu;
 	}
 }
@@ -580,7 +580,7 @@ button {
 	font-weight: 700;
 }
 
-.active-o1lhr {
+.router-link-active {
 	color: $orange;
 }
 </style>
